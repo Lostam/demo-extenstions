@@ -4,5 +4,5 @@
     connection: local 
     tasks:
 
-    - name: "just execute a ls -lrt command"
-      shell: "ls -lrt"
+    - name: "Execute Hello World"
+      shell: "echo hello world"
