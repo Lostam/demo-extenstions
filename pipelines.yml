@@ -24,7 +24,8 @@ pipelines:
         type: playbook/ansible
         syntaxVersion: latest
         configuration:              
-          gitRepoName: demo-extenstions
+          resourceName: extension_resource
+          fileName: ansible.yml
           inputResources:
             - name: extension_resource
         execution:
