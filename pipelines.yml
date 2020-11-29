@@ -12,7 +12,8 @@ resources:
     syntaxVersion: latest
     configuration:      
       GitHub : jatin_gh
-      giturl: "https://github.com/jatindogra/demo-extenstions.git"
+      gitUrl: "https://github.com/jatindogra/demo-extenstions.git"
+      gitBranch: main
       
 
 pipelines:
