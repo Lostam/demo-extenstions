@@ -1,0 +1,20 @@
+resources:
+  - name: jatin_gitrepo2
+    type: GitRepo
+    configuration:
+      gitProvider: jatin_gh
+      path: jatindogra/pipelines
+
+pipelines:
+  - name: extensions_pipelines
+    steps:
+      - name: extension_step
+        type: playbook/ansible
+        syntaxVersion: latest
+        configuration:              
+          foo: bar
+          inputResources:
+            - name: jatin_gitrepo2
+        execution:
+          onStart:
+            - echo "Preparing for work..."
