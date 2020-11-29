@@ -1,11 +1,11 @@
 resources:
-  - name: jatin_gitRepo
-    type: GitRepo
-    configuration:
-      gitProvider: jatin_gh
-      path: jatindogra/demo-extenstions
-      branches:
-        include: ^main$
+#   - name: jatin_gitRepo
+#     type: GitRepo
+#     configuration:
+#       gitProvider: jatin_gh
+#       path: jatindogra/demo-extenstions
+#       branches:
+#         include: ^main$
  
   - name: extension_resource
     type: playbook/gitrepo
@@ -14,6 +14,7 @@ resources:
       GitHub : jatin_gh
       gitUrl: https://github.com/jatindogra/demo-extenstions.git
       gitBranch: main
+      gitRepoName: demo-extenstions
       
 
 pipelines:
@@ -26,7 +27,6 @@ pipelines:
           foo: bar
           inputResources:
             - name: extension_resource
-            - name: jatin_gitRepo
         execution:
           onStart:
             - echo "Preparing for work..."
