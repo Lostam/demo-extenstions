@@ -3,5 +3,7 @@ configuration:
     type: Integration
     validate:
       isIntegrationType: GitHub
-  giturl:
+  gitUrl:
+    type: String
+  gitBranch:
     type: String
