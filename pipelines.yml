@@ -6,6 +6,13 @@ resources:
       path: jatindogra/demo-extenstions
       branches:
         include: ^main$
+ 
+  - name: extension_resource
+    type: playbook/gitrepo
+    syntaxVersion: latest
+    configuration:      
+      GitHub : jatin_gh
+      
 
 pipelines:
   - name: extensions_pipelines
@@ -16,6 +23,7 @@ pipelines:
         configuration:              
           foo: bar
           inputResources:
+            - name: extension_resource
             - name: jatin_gitRepo
         execution:
           onStart:
