@@ -4,6 +4,8 @@ resources:
     configuration:
       gitProvider: jatin_gh
       path: jatindogra/demo-extenstions
+      branches:
+        include: ^main$
 
 pipelines:
   - name: extensions_pipelines
