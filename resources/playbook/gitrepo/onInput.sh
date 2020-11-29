@@ -1,8 +1,6 @@
 execute_input() {
-  printenv
-  git clone https://github.com/jatindogra/demo-extenstions.git
-  cd demo-extenstions
-  ls
+  git clone $res_extension_resource_gitUrl
+  git checkout $res_extension_resource_gitBranch
 }
  
 execute_command "execute_input %%context.resourceName%%"
