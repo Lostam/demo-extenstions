@@ -13,7 +13,7 @@ resources:
     configuration:      
       GitHub : jatin_gh
       gitUrl: https://github.com/jatindogra/demo-extenstions.git
-      gitBranch: main
+      gitBranch: master
       gitRepoName: demo-extenstions
       
 
