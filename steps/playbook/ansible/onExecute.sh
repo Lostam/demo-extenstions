@@ -1,8 +1,11 @@
 execute_step() {
-  local gitRepoName=$(find_step_configuration_value "gitRepoName")
-  echo $gitRepoName
+  local resourceName=$(find_step_configuration_value "resourceName")
+  echo $resourceName
+  local fileName=$(find_step_configuration_value "fileName")
+  local resourcePath=$(find_resource_variable "$resourceName" resourcePath)/$fileName
+  echo $resourcePath
+  cat $resourcePath
   pwd
-  ls /var/opt/jfrog/pipelines/data/extensions_pipelines/runs/1990/steps/extension_step/3071/dependencyState/resources/extension_resource
   ansible-playbook ansible.yml
 }
 execute_command execute_step
