@@ -3,7 +3,7 @@ resources:
     type: GitRepo
     configuration:
       gitProvider: jatin_gh
-      path: jatindogra/pipelines
+      path: jatindogra/demo-extenstions
 
 pipelines:
   - name: extensions_pipelines
