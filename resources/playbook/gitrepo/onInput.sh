@@ -4,7 +4,7 @@ execute_input() {
   local resourcePath=$(find_resource_variable %%context.resourceName%% resourcePath)
   pushd $resourcePath
   git clone --branch $branch $url
-  popd $resourcePath
+  popd
 }
  
 execute_command "execute_input %%context.resourceName%%"
