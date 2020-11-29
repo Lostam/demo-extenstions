@@ -1,3 +1,5 @@
 configuration:
-  gitRepoName:
+  resourceName:
+    type: String
+  fileName:
     type: String
