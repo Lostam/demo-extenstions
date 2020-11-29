@@ -1,6 +1,7 @@
 execute_input() {
   printenv
   git clone https://github.com/jatindogra/demo-extenstions.git
+  cd demo-extenstions
   ls
 }
  
