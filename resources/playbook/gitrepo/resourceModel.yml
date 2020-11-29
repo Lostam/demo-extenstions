@@ -1,1 +1,5 @@
-
+configuration:   
+  GitHub:
+    type: Integration
+    validate:
+      isIntegrationType: GitHub
