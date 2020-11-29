@@ -10,11 +10,12 @@ resources:
   - name: extension_resource
     type: playbook/gitrepo
     syntaxVersion: latest
-    configuration:      
+    configuration:
       GitHub : jatin_gh
       gitUrl: https://github.com/jatindogra/demo-extenstions.git
       gitBranch: master
       gitRepoName: demo-extenstions
+      resourceName: extension_resource
       
 
 pipelines:
