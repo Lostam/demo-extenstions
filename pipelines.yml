@@ -24,7 +24,7 @@ pipelines:
         type: playbook/ansible
         syntaxVersion: latest
         configuration:              
-          foo: bar
+          gitRepoName: demo-extenstions
           inputResources:
             - name: extension_resource
         execution:
