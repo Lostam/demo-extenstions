@@ -1,7 +1,7 @@
 execute_input() {
-  ls
-  echo "git clone $res_extension_resource_gitUrl"
   git clone https://github.com/jatindogra/demo-extenstions.git
+  ls
+  cd demo-extenstions
   git checkout $res_extension_resource_gitBranch
 }
  
