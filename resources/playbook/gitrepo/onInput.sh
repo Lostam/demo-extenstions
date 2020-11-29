@@ -1,5 +1,5 @@
 execute_input() {
-  git clone git@github.com:jatindogra/demo-extenstions.git
+  printenv
 }
  
 execute_command "execute_input %%context.resourceName%%"
