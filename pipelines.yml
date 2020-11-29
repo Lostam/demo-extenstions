@@ -15,7 +15,6 @@ resources:
       gitUrl: https://github.com/jatindogra/demo-extenstions.git
       gitBranch: master
       gitRepoName: demo-extenstions
-      resourceName: extension_resource
       
 
 pipelines:
