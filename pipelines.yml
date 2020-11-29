@@ -31,6 +31,3 @@ pipelines:
         execution:
           onStart:
             - echo "Preparing for work..."
-            - pushd $res_extension_resource_gitRepoName/
-          onComplete:
-            - popd
