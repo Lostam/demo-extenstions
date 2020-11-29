@@ -7,3 +7,5 @@ configuration:
     type: String
   gitBranch:
     type: String
+  gitRepoName:
+    type: String
