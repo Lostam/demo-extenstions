@@ -1,8 +1,8 @@
 execute_input() {
-  git clone https://github.com/jatindogra/demo-extenstions.git
+  rm -rf $res_extension_resource_gitUrl
+  git clone --branch $res_extension_resource_gitBranch $res_extension_resource_gitUrl
+  cd $res_extension_resource_gitUrl
   ls
-  cd demo-extenstions
-  git checkout $res_extension_resource_gitBranch
 }
  
 execute_command "execute_input %%context.resourceName%%"
