@@ -1,5 +1,5 @@
 resources:
-  - name: jatin_gitrepo2
+  - name: jatin_gitrepo
     type: GitRepo
     configuration:
       gitProvider: jatin_gh
@@ -14,7 +14,7 @@ pipelines:
         configuration:              
           foo: bar
           inputResources:
-            - name: jatin_gitrepo2
+            - name: jatin_gitrepo
         execution:
           onStart:
             - echo "Preparing for work..."
